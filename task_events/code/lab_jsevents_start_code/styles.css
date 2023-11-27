@@ -1,0 +1,19 @@
+#delete-button {
+    background-color : red;
+    color : white;
+}
+
+#done-button {
+    background-color : green;
+    color : white;
+}
+
+#new-item{
+    color : grey;
+}
+
+.buttons {
+    margin-right: 50px;
+    margin-left: 50px;
+   
+}

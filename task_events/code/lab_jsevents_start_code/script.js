@@ -16,6 +16,8 @@ enter.addEventListener("click", (e)=>{
 
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
+    deleteButton.setAttribute("id","delete-button");
+    deleteButton.setAttribute("class","buttons");
     newListItem.appendChild(deleteButton);
     deleteButton.addEventListener("click", () => {
         deleteButton.parentElement.remove();
@@ -23,10 +25,13 @@ enter.addEventListener("click", (e)=>{
 
     const doneButton = document.createElement("button");
     doneButton.textContent = "Done";
+    doneButton.setAttribute("id","done-button");
     newListItem.appendChild(doneButton);
     doneButton.addEventListener("click", () => {
         doneButton.parentElement.remove();
         completedList.appendChild(doneButton.parentElement);
+        newListItem.setAttribute("id","new-item");
+        doneButton.setAttribute("class","buttons");
         doneButton.remove();
         deleteButton.remove();
     })
